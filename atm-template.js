@@ -1,41 +1,39 @@
 const ATM = {
-    is_auth: false, 
-    current_user:false,
-    current_type:false,
-     
-    // all cash of ATM
+    isAuth: false, 
+    currentUser: {},
+    // all cash available in ATM
     cash: 2000,
     // all available users
     users: [
-        {number: "0000", pin: "000", debet: 0, type: "admin"}, // EXTENDED
-        {number: "0025", pin: "123", debet: 675, type: "user"}
+        { id: "0000", pin: "000", debet: 0, type: "admin" }, // EXTENDED
+        { id: "0025", pin: "123", debet: 675, type: "user" }
     ],
     // authorization
-    auth: function(number, pin) {
+    auth: (id, pin) => {
  
     },
     // check current debet
-    check: function() {
+    check: () => {
  
     },
     // get cash - available for user only
-    getCash: function(amount) {
+    getCash: (amount) => {
  
     },
     // load cash - available for user only
-    loadCash: function(amount){
+    loadCash: (amount) => {
  
     },
     // load cash to ATM - available for admin only - EXTENDED
-    load_cash: function(addition) {
+    loadAtmCash: (amount) => {
  
     },
-    // get report about cash actions - available for admin only - EXTENDED
-    getReport: function() {
+    // get cash actions logs - available for admin only - EXTENDED
+    getLogs: () => {
  
     },
     // log out
-    logout: function() {
+    logout: () => {
  
     }
 };
