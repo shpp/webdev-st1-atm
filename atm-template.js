@@ -9,31 +9,31 @@ const ATM = {
         { id: "0025", pin: "123", debet: 675, type: "user" }
     ],
     // authorization
-    auth: (id, pin) => {
+    auth(id, pin) {
  
     },
     // check current debet
-    check: () => {
+    check() {
  
     },
     // get cash - available for user only
-    getCash: (amount) => {
+    getCash(amount) {
  
     },
     // load cash - available for user only
-    loadCash: (amount) => {
+    loadCash(amount) {
  
     },
     // load cash to ATM - available for admin only - EXTENDED
-    loadAtmCash: (amount) => {
+    loadAtmCash(amount) {
  
     },
     // get cash actions logs - available for admin only - EXTENDED
-    getLogs: () => {
+    getLogs() {
  
     },
     // log out
-    logout: () => {
+    logout() {
  
     }
 };
